@@ -7,6 +7,6 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
   %body
+    = render partial: 'nav'
     .container
-      .col-sm-8.col-sm-offset-2
-        = yield
+      = yield

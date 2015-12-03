@@ -1,2 +1,12 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+- if current_user
+  .jumbotron
+    %h1 ようこそ#{current_user.name}さん
+    .pull-right
+      = link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-warning btn-lg'
+    .clearfix
+- else
+  .jumbotron
+    %h1 サンプルだよ
+    .pull-right
+      = link_to 'Signin with Facebook', user_omniauth_authorize_path(:facebook), class: 'btn btn-primary btn-lg'
+    .clearfix
