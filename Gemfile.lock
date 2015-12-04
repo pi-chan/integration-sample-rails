@@ -75,6 +75,8 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    doorkeeper (3.0.1)
+      railties (>= 3.2)
     dotenv (1.0.2)
     dotenv-rails (1.0.2)
       dotenv (= 1.0.2)
@@ -242,6 +244,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.1.0)
   devise
+  doorkeeper
   dotenv-rails
   erb2haml
   font-awesome-rails

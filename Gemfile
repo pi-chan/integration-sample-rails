@@ -16,6 +16,7 @@ gem 'haml-rails'
 gem 'sprockets-coffee-react'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'doorkeeper'
 
 group :development, :test do
   gem 'hirb'
